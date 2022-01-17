@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>D:\Ada\Ada_Concurrency\ada_concurrency.gpr</vfs_project>
+      <vfs_file>D:\Ada\Ada_Concurrency\src\reading_room.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>D:\Ada\Ada_Concurrency\ada_concurrency.gpr</vfs_project>
+      <vfs_file>D:\Ada\Ada_Concurrency\src\reading_room.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Ada\Ada_Concurrency\ada_concurrency.gpr</vfs_project>
+      <vfs_file>D:\Ada\Ada_Concurrency\src\reading_room.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>D:\Ada\Ada_Concurrency\ada_concurrency.gpr</vfs_project>
+      <vfs_file>D:\Ada\Ada_Concurrency\src\reading_room.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 3" >
+      <vfs_project>D:\Ada\Ada_Concurrency\ada_concurrency.gpr</vfs_project>
+      <vfs_file>D:\Ada\Ada_Concurrency\src\reading_room.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>D:\Ada\Ada_Concurrency\ada_concurrency.gpr</vfs_project>
+      <vfs_file>D:\Ada\Ada_Concurrency\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
