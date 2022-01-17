@@ -1,6 +1,10 @@
+with Reading_Room;
+
 procedure Main is
 
 begin
-   --  Insert code here.
-   null;
+
+	Reading_Room.open_reading_room;
+
+	null;
 end Main;
