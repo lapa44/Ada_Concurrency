@@ -4,10 +4,7 @@ package body Reading_Room is
 
    procedure open_reading_room is
    
-	-- Initial values
-	--NO_READERS : CONSTANT Integer := 7;
-	--NO_WRITERS : CONSTANT Integer := 2;
-	--DELAY_MULTIPLIER : CONSTANT := 2; -- For writers, readers has delay equal to their id
+	-- Initial value for no books is 0
 	no_books : Integer :=0;
 	
 	-- Librarian is used to control ReadingRoom as it's director
@@ -21,6 +18,7 @@ package body Reading_Room is
 		is_Writing : Boolean := False;
 	end Librarian;
 	
+	-- Librarian implementation
 	protected body Librarian is
 		entry book_release when not is_Writing and curr_Readers=0 is
 			begin
@@ -46,7 +44,8 @@ package body Reading_Room is
 	
 	-- Librarian declaration
 	director : Librarian;
-	  
+	
+   -- Reader and Writer implementation
 	task type Reader is
 		entry start_reading (idi : Integer);
 	end Reader;
@@ -99,6 +98,7 @@ package body Reading_Room is
 	
 begin
    
+	-- Initialization of writers and readers tasks
 	for index in Writers'Range loop
 		Writers(index).start_writing(index);
 	end loop;

@@ -6,7 +6,7 @@ project Ada_Concurrency is
 
    package Ide is
       for Vcs_Kind use "git";
-      for Vcs_Repository_Root use "https://github.com/lapa44/Ada_Concurrency_Project";
+      for Vcs_Repository_Root use "https://github.com/lapa44/Ada_Concurrency";
    end Ide;
 
 end Ada_Concurrency;
