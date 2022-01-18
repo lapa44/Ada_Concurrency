@@ -3,3 +3,9 @@
 
 # Ada Library Information
 *.ali
+
+# Object directory
+/obj/*
+
+# XML Config for local project
+*.xml
