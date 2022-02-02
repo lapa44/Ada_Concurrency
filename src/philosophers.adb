@@ -6,7 +6,6 @@ package body Philosophers is
 		entry request when not is_clean is
 		begin
 			is_clean := True;
-			--owner_Id := id;
 		end request;
 		
 		procedure give_back is
@@ -21,9 +20,9 @@ package body Philosophers is
 			Put_Line("Philosopher #" & ID'Image & "  came to the table.");
 		end start_dine;
 		loop
-				--Put_Line ("Philosopher #" & ID'Image & " is thinking.");
+				Put_Line ("Philosopher #" & ID'Image & " is thinking.");
 				delay Duration(ID);
-				--Put_Line ("Philosopher #" & ID'Image & " is hungry.");
+				Put_Line ("Philosopher #" & ID'Image & " is hungry.");
 				Left.request;
 				Right.request;
 				Put_Line ("Philosopher #" & ID'Image & " is eating.");

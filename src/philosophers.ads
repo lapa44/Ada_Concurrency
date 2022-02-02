@@ -8,7 +8,6 @@ package Philosophers is
 		procedure give_back;
 		private
 		is_clean : Boolean := False;
-		--owner_Id : Integer;
 	end Fork;
 	
 	task type Philosopher (ID: Integer; Left, Right : not null access Fork) is
