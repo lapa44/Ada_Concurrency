@@ -44,10 +44,12 @@ package body Promise is
 		type promise_access is access Promise;
 		p1  : promise_access := new Promise;
 		listeners : array (1..5) of Listener(p1);
+		other_listener : Listener(p1);
 	begin
 		for listener in listeners'Range loop
 			listeners(listener).start_listening;
 		end loop;
 		p1.deliver(1);
+		other_listener.start_listening;
 	end promise_execution;
 end Promise;
